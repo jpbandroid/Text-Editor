@@ -1244,8 +1244,8 @@ namespace Ivirius_Text_Editor
                         {
                             new ToastContentBuilder()
                             .SetToastScenario(ToastScenario.Reminder)
-                            .AddText("It seems like Ivirius Text Editor + has a bug.")
-                            .AddText("These are the details:")
+                            .AddText("It seems like Ivirius Text Editor has crashed.")
+                            .AddText("These are the crash details:")
                             .AddText($"{Ex.Message}")
                             .AddButton(new ToastButton()
                                 .SetDismissActivation().SetContent("Close"))
@@ -1595,7 +1595,7 @@ namespace Ivirius_Text_Editor
                 {
                     new ToastContentBuilder()
                     .SetToastScenario(ToastScenario.Reminder)
-                    .AddText($"Ivirius Text Editor has a bug. These are the details:")
+                    .AddText($"Ivirius Text Editor has crashed. These are the details:")
                     .AddText($"Debugger Output:")
                     .AddText($"Message:")
                     .AddText($"{EX.Message}")
@@ -5697,6 +5697,16 @@ namespace Ivirius_Text_Editor
                 FontAccent.Foreground = Br;
                 ST.CharacterFormat.ForegroundColor = CF;
             }
+        }
+
+        private void Button_Click_400(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_401(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

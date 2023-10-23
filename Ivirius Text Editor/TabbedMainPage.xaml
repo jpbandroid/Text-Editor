@@ -2604,7 +2604,7 @@
                     <Grid Margin="0,20,0,0">
                         <Image Height="100" Width="100" Source="/AppMainIcon.png" HorizontalAlignment="Left"/>
                         <TextBlock TextWrapping="Wrap" Text="Ivirius Text Editor" Margin="120,0,0,20" VerticalAlignment="Center" FontSize="18" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}"/>
-                        <TextBlock TextWrapping="Wrap" Text="Create and edit rich text files - © Ivirius Text Editor 2022 - made by Ivirius" Margin="120,28,0,0" VerticalAlignment="Center" FontSize="12" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}"/>
+                        <TextBlock TextWrapping="Wrap" Text="Create and edit rich text files - Ivirius Text Editor - made by Ivirius" Margin="120,28,0,0" VerticalAlignment="Center" FontSize="12" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}"/>
                         <HyperlinkButton x:Name="hyperlinkButton" Content="https://ivirius.webnode.page/" Margin="120,60,0,0" NavigateUri="https://ivirius.webnode.page/" Padding="0,0,0,0" FontSize="11" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}"/>
                     </Grid>
                 </StackPanel>
@@ -2622,28 +2622,40 @@
                 </Button>
                 <TextBlock x:Name="HomeWelcome" x:FieldModifier="public" TextWrapping="Wrap" Text="Home" Margin="20,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}"/>
                 <StackPanel Margin="20,50,20,0" Spacing="-10">
-                    <StackPanel Height="75" Orientation="Horizontal">
-                        <Button Height="75" HorizontalContentAlignment="Left" Click="NewFile_Click" Width="75" Padding="0,0,0,0" CornerRadius="4,0,0,4" BorderThickness="1,1,0,1">
-                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Height="45">
+                    <StackPanel Height="100" Orientation="Horizontal">
+                        <Button Height="100" HorizontalContentAlignment="Left" Click="NewFile_Click" Width="100" Padding="0,0,0,0" CornerRadius="4,0,0,4" BorderThickness="1,1,0,1">
+                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="45">
                                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="{StaticResource CustomFont}" FontSize="24" Margin="0,0,1,0" Height="25" Text="&#xE109;"/>
                                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="{StaticResource CustomFont}" Margin="0,30,0,0" Padding="0,0,0,0" FontSize="12" Height="14"><Run Text="New File"/><LineBreak/><Run/></TextBlock>
                             </Grid>
                         </Button>
-                        <Button Height="75" HorizontalContentAlignment="Left" Click="OB_Click" Width="75" Padding="0,0,0,0" CornerRadius="0,0,0,0" BorderThickness="0,1,0,1">
-                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Height="45">
+                        <Button Height="100" HorizontalContentAlignment="Left" Click="OB_Click" Width="100" Padding="0,0,0,0" CornerRadius="0,0,0,0" BorderThickness="0,1,0,1">
+                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="45">
                                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="{StaticResource CustomFont}" FontSize="24" Margin="0,0,1,0" Height="25" Text="&#xE1A5;"/>
                                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="{StaticResource CustomFont}" Margin="0,30,0,0" Padding="0,0,0,0" FontSize="12" Height="14"><Run Text="Open File"/><LineBreak/><Run/></TextBlock>
                             </Grid>
                         </Button>
-                        <Button Height="75" HorizontalContentAlignment="Left" Click="Button_Click_3" Width="75" Padding="0,0,0,0" CornerRadius="0,4,4,0" BorderThickness="0,1,1,1">
-                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Height="45">
+                        <Button Height="100" HorizontalContentAlignment="Left" Click="Button_Click_3" Width="100" Padding="0,0,0,0" CornerRadius="0,4,4,0" BorderThickness="0,1,1,1">
+                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="45">
                                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="{StaticResource CustomFont}" Text="&#xE7A7;" FontSize="24" Margin="0,0,1,0"/>
                                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Ivirius Hub" FontFamily="{StaticResource CustomFont}" Margin="0,30,0,0" Padding="0,0,0,0" FontSize="12"/>
                             </Grid>
                         </Button>
-                        <Button Height="75" Click="Button_Click_20" Width="225" Padding="0,0,0,0" CornerRadius="4,4,4,4" Margin="15,0,0,0">
+                        <Button Height="100" HorizontalContentAlignment="Left" Click="Button_Click_400" Width="100" Padding="0,0,0,0" CornerRadius="0,4,4,0" BorderThickness="0,1,1,1">
+                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="45">
+                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="{ThemeResource SymbolThemeFontFamily}" Text="&#xE943;" FontSize="24" Margin="0,0,1,0"/>
+                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Text="GitHub repo" FontFamily="{StaticResource CustomFont}" Margin="0,30,0,0" Padding="0,0,0,0" FontSize="12"/>
+                            </Grid>
+                        </Button>
+                        <Button Height="100" HorizontalContentAlignment="Left" Click="Button_Click_401" Width="100" Padding="0,0,0,0" CornerRadius="0,4,4,0" BorderThickness="0,1,1,1">
+                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="45">
+                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="{StaticResource CustomFont}" Text="&#xE7A7;" FontSize="24" Margin="0,0,1,0"/>
+                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Get Ivirius Text Editor+" FontFamily="{StaticResource CustomFont}" Margin="0,30,0,0" Padding="0,0,0,0" FontSize="12"/>
+                            </Grid>
+                        </Button>
+                        <Button Height="100" Click="Button_Click_20" Width="225" Padding="0,0,0,0" CornerRadius="4,4,4,4" Margin="15,0,0,0">
                             <Grid VerticalAlignment="Center" Height="60" Width="198">
-                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="{StaticResource CustomFont}" Text="&#xE109;" FontSize="24" Margin="10,0,1,0"/>
+                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="{ThemeResource SymbolThemeFontFamily}" Text="&#xEC24;" FontSize="24" Margin="10,0,1,0"/>
                                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" Text="New file from template" FontFamily="{StaticResource CustomFont}" Margin="40,0,0,25" Padding="0,0,0,0" FontSize="14"/>
                                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Create a new file using the given templates" FontFamily="{StaticResource CustomFont}" Margin="40,15,0,0" Padding="0,0,0,0" FontSize="9"/>
                             </Grid>
@@ -2761,7 +2773,7 @@
                     <Grid Margin="0,20,0,0">
                         <Image Height="100" Width="100" Source="/AppMainIcon.png" HorizontalAlignment="Left"/>
                         <TextBlock TextWrapping="Wrap" Text="Ivirius Text Editor" Margin="120,0,0,20" VerticalAlignment="Center" FontSize="18" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}"/>
-                        <TextBlock TextWrapping="Wrap" Text="Create and edit rich text files - © Ivirius Text Editor 2022 - made by Ivirius" Margin="120,28,0,0" VerticalAlignment="Center" FontSize="12" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}"/>
+                        <TextBlock TextWrapping="Wrap" Text="Create and edit rich text files - Ivirius Text Editor - made by Ivirius" Margin="120,28,0,0" VerticalAlignment="Center" FontSize="12" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}"/>
                         <HyperlinkButton Content="https://ivirius.webnode.page/" Margin="120,60,0,0" NavigateUri="https://ivirius.webnode.page/" Padding="0,0,0,0" FontSize="11" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}"/>
                     </Grid>
                 </StackPanel>
@@ -2834,11 +2846,11 @@
                 <Grid Margin="10,0,10,0">
                     <Image HorizontalAlignment="Left" Height="100" Margin="5,5,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/AppIcons/AppMainIcon.png"/>
                     <TextBlock HorizontalAlignment="Left" Margin="120,20,0,0" TextWrapping="Wrap" Text="Ivirius Text Editor" VerticalAlignment="Top" FontSize="16"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="120,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="11"><Run Text="Version 2.3.0.0 - Full release"/><LineBreak/><Run Text="Copyright © Ivirius Text Editor 2021 - 2023 "/><LineBreak/><Run Text="Do not Distribute"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="120,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="11"><Run Text="Version 2.3.1.0 - GitHub Release"/><LineBreak/><Run Text="Copyright © Ivirius 2021 - 2023, Copyright ©️ jpb/ErrorTek 2023"/><LineBreak/><Run Text="Licensed under the MIT License"/><LineBreak/><Run/></TextBlock>
                     <StackPanel Margin="0,120,0,0">
-                        <HyperlinkButton Content="WinUI 2" Click="HyperlinkButton_Click"/>
-                        <HyperlinkButton Content="Windows Community Toolkit" Click="HyperlinkButton_Click_1"/>
-                        <HyperlinkButton Content="Universal Windows Platform" Click="HyperlinkButton_Click_2"/>
+                        <HyperlinkButton Content="WinUI 2.8.5" Click="HyperlinkButton_Click"/>
+                        <HyperlinkButton Content="Windows Community Toolkit 7.1.3" Click="HyperlinkButton_Click_1"/>
+                        <HyperlinkButton Content="UWP (Universal WIndows Platform)" Click="HyperlinkButton_Click_2"/>
                         <HyperlinkButton Content="Humanizer" Click="HyperlinkButton_Click_3"/>
                     </StackPanel>
                 </Grid>
