@@ -5699,14 +5699,14 @@ namespace Ivirius_Text_Editor
             }
         }
 
-        private void Button_Click_400(object sender, RoutedEventArgs e)
+        private async void Button_Click_400(object sender, RoutedEventArgs e)
         {
-
+            _ = await Launcher.LaunchUriAsync(new Uri("https://github.com/jpbandroid/Text-Editor/tree/master"));
         }
 
-        private void Button_Click_401(object sender, RoutedEventArgs e)
+        private async void Button_Click_401(object sender, RoutedEventArgs e)
         {
-
+            _ = await Launcher.LaunchUriAsync(new Uri("https://ivirius.webnode.page/ivirius-text-editor2/"));
         }
     }
 }
