@@ -2869,10 +2869,10 @@
                 <Grid>
                     <Border BorderThickness="1"/>
                     <StackPanel Orientation="Vertical" Margin="15,5,15,15">
-                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="Version 2.3.1.0, released on 24 October 2023"/>
+                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="Version 2.4.0.0, released on 25 October 2023"/>
                         <TextBlock TextWrapping="WrapWholeWords" Text="What's New:"/>
-                        <TextBlock TextWrapping="WrapWholeWords" Text="• An in-app changelog box has been added! Of course, the online changelog is still accessible from the app if needed!"/>
-                        <TextBlock TextWrapping="WrapWholeWords" Text="• The free version is now open source! A button that leads to the GitHub repo has been added!"/>
+                        <TextBlock TextWrapping="WrapWholeWords" Text="• New functions have been added to Zippy! Zippy can now greet you and tell the time!"/>
+                        <TextBlock TextWrapping="WrapWholeWords" Text="• A new theme, Transparent, has been added"/>
                         <TextBlock TextWrapping="WrapWholeWords" Text="• New button that leads to the Ivirius Text Editor+ page has been added"/>
                         <TextBlock TextWrapping="WrapWholeWords" Text="• Small updates to the About dialog"/>
                         <TextBlock TextWrapping="WrapWholeWords" Text="• Small updates to crash prompts"/>
