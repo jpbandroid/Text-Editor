@@ -196,6 +196,45 @@ namespace Ivirius_Text_Editor
                     }
                     catch { return; }
                 }
+                if ((string)LS.Values["Theme"] == "Transparent")
+                {
+                    AppTitleBar.ButtonForegroundColor = Colors.LightSteelBlue;
+                    AppTitleBar.ButtonHoverForegroundColor = Colors.LightSkyBlue;
+                    AppTitleBar.ButtonPressedForegroundColor = Colors.DarkSlateBlue;
+                    AppTitleBar.ButtonHoverBackgroundColor = Colors.DarkGray;
+                    AppTitleBar.ButtonPressedBackgroundColor = Colors.DarkGray;
+                    var AB = new AcrylicBrush();
+                    AB.TintColor = Colors.DimGray;
+                    AB.BackgroundSource = AcrylicBackgroundSource.HostBackdrop;
+                    AB.TintOpacity = 0.01;
+                    AB.FallbackColor = Colors.SteelBlue;
+                    MainPageComponent.Background = AB;
+                    RequestedTheme = ElementTheme.Light;
+                    AeroBlue.Visibility = Visibility.Collapsed;
+                    TabForegroundSelect.Color = Colors.White;
+                    TabForegroundSelect2.Color = Colors.White;
+                    TabForegroundSelect3.Color = Colors.White;
+                    TabForegroundSelect4.Color = Colors.White;
+                    ToolbarTextAccent.Foreground = new SolidColorBrush(Colors.White);
+                    try
+                    {
+                        if ((string)LS.Values["AccentBackground"] == "On")
+                        {
+                            TabAcrylicBrush.TintColor = (AccentBorder.Background as AcrylicBrush).TintColor;
+                            TabAcrylicBrush.FallbackColor = (AccentBorder.Background as AcrylicBrush).FallbackColor;
+                            TabAcrylicBrush.TintOpacity = (AccentBorder.Background as AcrylicBrush).TintOpacity;
+                            TabAcrylicBrush.BackgroundSource = (AccentBorder.Background as AcrylicBrush).BackgroundSource;
+                        }
+                        else
+                        {
+                            TabAcrylicBrush.TintColor = AB.TintColor;
+                            TabAcrylicBrush.FallbackColor = AB.FallbackColor;
+                            TabAcrylicBrush.TintOpacity = AB.TintOpacity;
+                            TabAcrylicBrush.BackgroundSource = AB.BackgroundSource;
+                        }
+                    }
+                    catch { return; }
+                }
                 if ((string)LS.Values["Theme"] == "Nostalgic Windows-old")
                 {
                     AppTitleBar.ButtonForegroundColor = Colors.White;
@@ -776,6 +815,14 @@ namespace Ivirius_Text_Editor
             if (ThemeListBox.SelectedIndex == 5)
             {
                 LS.Values["Theme"] = "Acrylic";
+            }
+            if (ThemeListBox.SelectedIndex == 6)
+            {
+                LS.Values["Theme"] = "Transparent";
+            }
+            if (ThemeListBox.SelectedIndex == 7)
+            {
+                LS.Values["Theme"] = "Nostalgic Windows-old";
             }
         }
 

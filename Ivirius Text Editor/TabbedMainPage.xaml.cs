@@ -81,6 +81,8 @@ namespace Ivirius_Text_Editor
             ThemeBox.Items.Add("Acrylic");
             ThemeBox.Items.Add("Acrylic Glass");
             ThemeBox.Items.Add("Old");
+            ThemeBox.Items.Add("Transparent");
+            ThemeBox.Items.Add("Nostalgic Windows-old");
 
 
             //Get username
@@ -282,6 +284,55 @@ namespace Ivirius_Text_Editor
                     BorTextAccent.Foreground = new SolidColorBrush(Colors.White);
                     RequestedTheme = ElementTheme.Dark;
                     AeroBlue.Visibility = Visibility.Collapsed;
+                }
+                if ((string)LocalSettings.Values["Theme"] == "Transparent")
+                {
+                    AppTitleBar.ButtonForegroundColor = Colors.SteelBlue;
+                    AppTitleBar.ButtonHoverForegroundColor = Colors.SkyBlue;
+                    AppTitleBar.ButtonPressedForegroundColor = Colors.DarkSlateBlue;
+                    AppTitleBar.ButtonHoverBackgroundColor = Colors.DarkGray;
+                    AppTitleBar.ButtonPressedBackgroundColor = Colors.DarkGray;
+                    var AB = new AcrylicBrush();
+                    AB.TintColor = Colors.SteelBlue;
+                    AB.BackgroundSource = AcrylicBackgroundSource.HostBackdrop;
+                    AB.TintOpacity = 0.01;
+                    AB.FallbackColor = Colors.SteelBlue;
+                    ToolbarAccent.Background = AB;
+                    var AB2 = new AcrylicBrush();
+                    AB2.TintColor = Colors.Black;
+                    AB2.BackgroundSource = AcrylicBackgroundSource.HostBackdrop;
+                    AB2.TintOpacity = 0.01;
+                    AB2.FallbackColor = Colors.WhiteSmoke;
+                    PageTitleBar.Background = AB2;
+                    ToolbarTextAccent.Foreground = new SolidColorBrush(Colors.Black);
+                    BorTextAccent.Foreground = new SolidColorBrush(Colors.Black);
+                    AeroBlue.Visibility = Visibility.Collapsed;
+                    RequestedTheme = ElementTheme.Light;
+                }
+                if ((string)LocalSettings.Values["Theme"] == "Nostalgic Windows-old")
+                {
+                    var AB2 = new AcrylicBrush();
+                    AB2.TintColor = Colors.Black;
+                    AB2.BackgroundSource = AcrylicBackgroundSource.HostBackdrop;
+                    AB2.TintOpacity = 0.4;
+                    AB2.FallbackColor = Colors.Black;
+                    PageTitleBar.Background = AB2;
+                    BorTextAccent.Foreground = new SolidColorBrush(Colors.Black);
+                    AeroBlue.Visibility = Visibility.Collapsed;
+                    RequestedTheme = ElementTheme.Light;
+                    AppTitleBar.ButtonForegroundColor = Colors.White;
+                    AppTitleBar.ButtonHoverForegroundColor = Colors.White;
+                    AppTitleBar.ButtonPressedForegroundColor = Colors.White;
+                    AppTitleBar.ButtonHoverBackgroundColor = Color.FromArgb(50, 41, 84, 255);
+                    AppTitleBar.ButtonPressedBackgroundColor = Color.FromArgb(50, 49, 77, 189);
+                    var AB = new AcrylicBrush();
+                    AB.TintColor = Colors.Green;
+                    AB.BackgroundSource = AcrylicBackgroundSource.HostBackdrop;
+                    AB.TintOpacity = 0.1;
+                    AB.FallbackColor = Colors.LightSeaGreen;
+                    RequestedTheme = ElementTheme.Light;
+                    AeroBlue.Visibility = Visibility.Visible;
+                    ToolbarTextAccent.Foreground = new SolidColorBrush(Colors.White);
                 }
             }
             else
@@ -772,6 +823,14 @@ namespace Ivirius_Text_Editor
                 if ((string)LocalSettings.Values["Theme"] == "Nostalgic Windows")
                 {
                     ThemeBox.SelectedItem = "Acrylic";
+                }
+                if ((string)LocalSettings.Values["Theme"] == "Nostalgic Windows-old")
+                {
+                    ThemeBox.SelectedItem = "Nostalgic Windows-old";
+                }
+                if ((string)LocalSettings.Values["Theme"] == "Transparent")
+                {
+                    ThemeBox.SelectedItem = "Transparent";
                 }
                 if ((string)LocalSettings.Values["Theme"] == "Acrylic")
                 {
@@ -3543,6 +3602,10 @@ namespace Ivirius_Text_Editor
                 if ((string)ThemeBox.SelectedItem == "Slate Green")
                 {
                     LS.Values["Theme"] = "Slate Green";
+                }
+                if ((string)ThemeBox.SelectedItem == "Transparent")
+                {
+                    LS.Values["Theme"] = "Transparent";
                 }
             }
             if (AccentBorderToggle != null)
