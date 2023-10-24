@@ -2855,6 +2855,15 @@
                     </StackPanel>
                 </Grid>
             </local:MessageBox>
+            <local:MessageBox x:Name="ChangelogBox" Icon="/Assets/AppIcons/01.png" Title="Changelog" BlockUserInput="False" FirstButtonText="CLose" SecondButtonText="Online Changelog" SecondButtonClick="ChangelogButton_Click2" MessageBoxHeight="620" MessageBoxWidth="500" CloseButtonStyle="UWP" d:IsHidden="True">
+                <Grid>
+                    <Border BorderThickness="1"/>
+                    <StackPanel Orientation="Vertical" Margin="15,5,15,15">
+                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="Version 2.3.1.0, released on 24 October 2023"/>
+                        <TextBlock Text="What's New:\n• Adds an in-app changelog box\n• The free version is now open source! A button that leads to the GitHub repo has been added!\n• New button that leads to the Ivirius Text Editor+ page has been added\n• Small updates to the About dialog\n• An in-app changelog box has been added! Of course, the online changelog is still accessible from the app if needed!"/>
+                    </StackPanel>
+                </Grid>
+            </local:MessageBox>
             <local:MessageBox x:Name="FileSaveBox" MessageBoxHeight="200" MessageBoxWidth="420" PlaySound="True" Title="Ivirius Text Editor" d:IsHidden="True" RememberPosition="False">
                 <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
                     <Image HorizontalAlignment="Left" Height="75" Margin="15,15,0,0" VerticalAlignment="Top" Width="75" Source="/Assets/AppIcons/ActionWarningGlyph.png"/>

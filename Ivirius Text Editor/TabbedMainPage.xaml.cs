@@ -4222,7 +4222,10 @@ namespace Ivirius_Text_Editor
             SettingsBox.Open();
         }
 
-        private async void ChangelogButton_Click(object Sender, RoutedEventArgs EvArgs) => await Launcher.LaunchUriAsync(new Uri("https://ivirius.webnode.page/ivirius-text-editor"));
+        private async void ChangelogButton_Click(object Sender, RoutedEventArgs EvArgs)
+        {
+            ChangelogBox.Open();
+        }
 
         private async void Button_Click(object Sender, RoutedEventArgs EvArgs) => await Launcher.LaunchUriAsync(new Uri("https://ivirius.webnode.page"));
 
@@ -5707,6 +5710,11 @@ namespace Ivirius_Text_Editor
         private async void Button_Click_401(object sender, RoutedEventArgs e)
         {
             _ = await Launcher.LaunchUriAsync(new Uri("https://ivirius.webnode.page/ivirius-text-editor2/"));
+        }
+
+        private async void ChangelogButton_Click2(object sender, RoutedEventArgs e)
+        {
+            _ = await Launcher.LaunchUriAsync(new Uri("https://ivirius.webnode.page/ivirius-text-editor/"));
         }
     }
 }
