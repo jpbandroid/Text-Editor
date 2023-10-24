@@ -2648,8 +2648,8 @@
                             </Grid>
                         </Button>
                         <Button Height="100" HorizontalContentAlignment="Left" Click="Button_Click_401" Width="100" Padding="0,0,0,0" CornerRadius="0,4,4,0" BorderThickness="0,1,1,1">
-                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="45">
-                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="{StaticResource CustomFont}" Text="&#xE7A7;" FontSize="24" Margin="0,0,1,0"/>
+                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="55">
+                                <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="{ThemeResource SymbolThemeFontFamily}" Text="&#xEC24;" FontSize="24" Margin="0,0,1,0"/>
                                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Get Ivirius Text Editor+" FontFamily="{StaticResource CustomFont}" Margin="0,30,0,0" Padding="0,0,0,0" FontSize="12"/>
                             </Grid>
                         </Button>
