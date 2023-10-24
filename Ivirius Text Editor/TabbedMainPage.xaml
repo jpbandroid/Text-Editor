@@ -2358,6 +2358,11 @@
                             <Button x:Name="MoreOptionsBlock" HorizontalAlignment="Center" VerticalAlignment="Top" Width="0" Height="0">
                                 <Button.Flyout>
                                     <MenuFlyout>
+                                        <MenuFlyoutItem x:Name="HelloItem" Text="Say hello" Click="MenuFlyoutItem_Click_151">
+                                            <MenuFlyoutItem.Icon>
+                                                <FontIcon FontFamily="{StaticResource CustomFont}" Glyph="👋"/>
+                                            </MenuFlyoutItem.Icon>
+                                        </MenuFlyoutItem>
                                         <MenuFlyoutItem Text="Pet" Click="MenuFlyoutItem_Click_30">
                                             <MenuFlyoutItem.Icon>
                                                 <FontIcon FontFamily="{StaticResource CustomFont}" Glyph="😄"/>
@@ -2391,6 +2396,11 @@
                                         <MenuFlyoutItem x:Name="TellSomethingItem" Text="Tell me something" Click="MenuFlyoutItem_Click_27">
                                             <MenuFlyoutItem.Icon>
                                                 <BitmapIcon UriSource="/Assets/AppIcons/ActionInfoGlyph.png" ShowAsMonochrome="False" />
+                                            </MenuFlyoutItem.Icon>
+                                        </MenuFlyoutItem>
+                                        <MenuFlyoutItem x:Name="TimeItem" Text="Tell the time" Click="MenuFlyoutItem_Click_150">
+                                            <MenuFlyoutItem.Icon>
+                                                <FontIcon FontFamily="{StaticResource CustomFont}" Glyph="⌚"/>
                                             </MenuFlyoutItem.Icon>
                                         </MenuFlyoutItem>
                                     </MenuFlyout>

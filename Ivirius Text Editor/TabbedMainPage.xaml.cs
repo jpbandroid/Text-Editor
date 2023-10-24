@@ -5716,5 +5716,20 @@ namespace Ivirius_Text_Editor
         {
             _ = await Launcher.LaunchUriAsync(new Uri("https://ivirius.webnode.page/ivirius-text-editor/"));
         }
+
+        private void MenuFlyoutItem_Click_150(object sender, RoutedEventArgs e)
+        {
+            ZippyMessageFlyout.Title = "⌚ Time";
+                ZippyMessageFlyout.Subtitle = "The time right now is: " + DateTime.Now.ToString();
+                ZippyMessageFlyout.IsOpen = true;
+        }
+
+        private void MenuFlyoutItem_Click_151(object sender, RoutedEventArgs e)
+        {
+            string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+            ZippyMessageFlyout.Title = "👋 Hello";
+                ZippyMessageFlyout.Subtitle = "Hello, " + userName;
+                ZippyMessageFlyout.IsOpen = true;
+        }
     }
 }
