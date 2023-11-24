@@ -2869,10 +2869,10 @@
                 <Grid>
                     <Border BorderThickness="1"/>
                     <StackPanel Orientation="Vertical" Margin="15,5,15,15">
-                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="Version 2.5.0.0, released on 25 October 2023"/>
+                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="Version 2.5.0.0, released on 24 November 2023"/>
                         <TextBlock TextWrapping="WrapWholeWords" Text="What's New:"/>
-                        <TextBlock TextWrapping="WrapWholeWords" Text="• New functions have been added to Zippy! Zippy can now greet you and tell the time!"/>
-                        <TextBlock TextWrapping="WrapWholeWords" Text="• A new theme, Transparent, has been added"/>
+                        <TextBlock TextWrapping="WrapWholeWords" Text="• Fixes to the Highlighting UI"/>
+                        <TextBlock TextWrapping="WrapWholeWords" Text="• Dependency updates"/>
                     </StackPanel>
                 </Grid>
             </local:MessageBox>
