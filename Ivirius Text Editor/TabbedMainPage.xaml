@@ -2856,7 +2856,7 @@
                 <Grid Margin="10,0,10,0">
                     <Image HorizontalAlignment="Left" Height="100" Margin="5,5,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/AppIcons/AppMainIcon.png"/>
                     <TextBlock HorizontalAlignment="Left" Margin="120,20,0,0" TextWrapping="Wrap" Text="Ivirius Text Editor" VerticalAlignment="Top" FontSize="16"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="120,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="11"><Run Text="Version 2.4.0.0 - GitHub Release"/><LineBreak/><Run Text="Copyright © Ivirius 2021 - 2023, Copyright ©️ jpb/ErrorTek 2023"/><LineBreak/><Run Text="Licensed under the MIT License"/><LineBreak/><Run/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="120,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="11"><Run Text="Version 2.5.0.0 - GitHub Release"/><LineBreak/><Run Text="Copyright © Ivirius 2021 - 2023, Copyright ©️ jpb/ErrorTek 2023"/><LineBreak/><Run Text="Licensed under the MIT License"/><LineBreak/><Run/></TextBlock>
                     <StackPanel Margin="0,120,0,0">
                         <HyperlinkButton Content="WinUI 2.8.5" Click="HyperlinkButton_Click"/>
                         <HyperlinkButton Content="Windows Community Toolkit 7.1.3" Click="HyperlinkButton_Click_1"/>
@@ -2869,7 +2869,7 @@
                 <Grid>
                     <Border BorderThickness="1"/>
                     <StackPanel Orientation="Vertical" Margin="15,5,15,15">
-                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="Version 2.4.0.0, released on 25 October 2023"/>
+                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="Version 2.5.0.0, released on 25 October 2023"/>
                         <TextBlock TextWrapping="WrapWholeWords" Text="What's New:"/>
                         <TextBlock TextWrapping="WrapWholeWords" Text="• New functions have been added to Zippy! Zippy can now greet you and tell the time!"/>
                         <TextBlock TextWrapping="WrapWholeWords" Text="• A new theme, Transparent, has been added"/>
