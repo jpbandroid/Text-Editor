@@ -565,12 +565,12 @@ namespace Ivirius_Text_Editor
 
         private void DT_Tick(object sender, object e)
         {
-            var Y = TabbedView.TabItems;
-            foreach (var X in Y.Cast<TabViewItem>())
-            {
-                var Z = ((X.Content as Frame).Content as TabbedMainPage).FileNameTextBlock.Text;
-                X.Name = Z;
-            }
+            //var Y = TabbedView.TabItems;
+            //foreach (var X in Y.Cast<TabViewItem>())
+            //{
+            //    var Z = ((X.Content as Frame).Content as TabbedMainPage).FileNameTextBlock.Text;
+            //    X.Name = Z;
+            //}
         }
 
         //public string answer;

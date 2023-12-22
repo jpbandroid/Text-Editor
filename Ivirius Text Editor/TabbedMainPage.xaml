@@ -6,7 +6,7 @@
     xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
     xmlns:Custom1="using:Microsoft.Toolkit.Uwp.UI.Converters"
     x:Class="Ivirius_Text_Editor.TabbedMainPage"
-    xmlns:local="using:Ivirius_Text_Editor"
+    xmlns:local="using:Ivirius_Text_Editor" xmlns:toolkit="using:CommunityToolkit.WinUI.Controls"
     mc:Ignorable="d" KeyDown="Page_KeyDown" KeyUp="Page_KeyUp" RequestedTheme="Light"
     >
     <Page.Resources>
@@ -2788,6 +2788,32 @@
                     </Grid>
                 </StackPanel>
             </Grid>
+            
+        </Grid>
+        <Grid x:Name="Settings" Visibility="Collapsed">
+            <Grid.Background>
+                <AcrylicBrush BackgroundSource="HostBackdrop" TintColor="{ThemeResource SystemAccentColor}" TintOpacity="0.35" FallbackColor="{ThemeResource SystemAccentColor}"/>
+            </Grid.Background>
+            <!--<Border x:Name="SettingsAccentBKG" BorderThickness="0,0,0,0" Visibility="{Binding Visibility, ElementName=AccentBackground}">
+                <Border.Background>
+
+                    <AcrylicBrush BackgroundSource="HostBackdrop" TintColor="{ThemeResource SystemAccentColor}" TintOpacity="0.35" FallbackColor="{ThemeResource SystemAccentColor}"/>
+                </Border.Background>
+            </Border>-->
+            <Button x:Name="CloseSettings" VerticalContentAlignment="Center" Width="45" Height="31" Click="HideSettings_Click" FontFamily="{StaticResource CustomFont}" FontSize="10" Background="{x:Null}" BorderBrush="{x:Null}" ToolTipService.ToolTip="Go to workspace" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}" VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,0,0,0" BorderThickness="0,0,0,0" CornerRadius="0,0,0,0">
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{Binding Foreground, ElementName=ToolbarTextAccent}" HorizontalAlignment="Center" FontFamily="{StaticResource CustomFont}" Text="&#xE106;" FontSize="14"/>
+            </Button>
+            <ScrollViewer Grid.Row="1" x:Name="view">
+                <StackPanel Orientation="Vertical" Padding="20" Spacing="5">
+                    <TextBlock Text="Settings" Margin="0,0,0,10" FontSize="32" FontWeight="SemiBold" />
+
+                    <TextBlock Text="Personalisation" Margin="0,0,0,10" FontSize="18" FontWeight="SemiBold" />
+                    <toolkit:SettingsCard Header="Theme" Description="Choose which app theme you want to apply here">
+                        <ComboBox x:Name="ThemeBox" Width="200" HorizontalAlignment="Left" SelectionChanged="ThemeBox_SelectionChanged"/>
+                    </toolkit:SettingsCard>
+
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
         <local:MessageBoxesGrid>
             <local:MessageBox x:Name="ActionErrorBox" IsSingleButton="True" Title="Ivirius Text Editor" FirstButtonText="OK" MessageBoxWidth="400" RememberPosition="False" PlaySound="True" d:IsHidden="True">
@@ -2810,7 +2836,7 @@
                     <StackPanel Orientation="Vertical" Margin="15,5,15,15">
                         <Grid>
                             <TextBlock HorizontalAlignment="Left" Margin="210,8,0,0" TextWrapping="Wrap" Text="Theme" VerticalAlignment="Top" FontSize="11"/>
-                            <ComboBox x:Name="ThemeBox" Width="200" HorizontalAlignment="Left" SelectionChanged="ThemeBox_SelectionChanged"/>
+                            <ComboBox x:Name="ThemeBoxO" Width="200" HorizontalAlignment="Left" SelectionChanged="ThemeBox_SelectionChanged"/>
                             <ToggleSwitch x:Name="AccentBorderToggle" Margin="0,30,0,0" HorizontalAlignment="Left" MinWidth="0" VerticalAlignment="Top" OffContent=" " OnContent=" "/>
                             <TextBlock HorizontalAlignment="Left" Margin="50,41,0,0" TextWrapping="Wrap" Text="Accent border" VerticalAlignment="Top" FontSize="11"/>
                             <ToggleSwitch x:Name="ToolbarBackgroundToggle" Margin="0,60,0,0" HorizontalAlignment="Left" MinWidth="0" VerticalAlignment="Top" OffContent=" " OnContent=" "/>
