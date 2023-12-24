@@ -4282,7 +4282,7 @@ namespace Ivirius_Text_Editor
 
         private void SettingsButton_Click(object Sender, RoutedEventArgs EvArgs)
         {
-            SettingsBox.Open();
+            Settings.Visibility = Visibility.Visible;
         }
 
         private async void ChangelogButton_Click(object Sender, RoutedEventArgs EvArgs)
@@ -5794,5 +5794,8 @@ namespace Ivirius_Text_Editor
                 ZippyMessageFlyout.Subtitle = "Hello, " + userName;
                 ZippyMessageFlyout.IsOpen = true;
         }
+
+        private void HideSettings_Click(object Sender, RoutedEventArgs EvArgs) => Settings.Visibility = Visibility.Collapsed;
+
     }
 }
